@@ -40,6 +40,9 @@ function BasicExample() {
   return (
     <>
       <Navbar expand="lg" className="text-start nav-body">
+        <Navbar.Brand
+          href="/dashboard"
+        />
         <Navbar.Brand href="/">
           <img
             src={logoImg}
@@ -76,6 +79,33 @@ function BasicExample() {
               >
                 <span className="navlink-text">
                   My Reservations
+                </span>
+              </Nav.Link>
+              <Nav.Link
+                href="/add-reservation"
+                onClick={() => handleNavLinkClick('add-reservation')}
+                className={activeNavLink === 'add-reservation' ? 'active' : ''}
+              >
+                <span className="navlink-text">
+                  Add Reservation
+                </span>
+              </Nav.Link>
+              <Nav.Link
+                href="/register"
+                onClick={() => handleNavLinkClick('register')}
+                className={activeNavLink === 'register' ? 'active' : ''}
+              >
+                <span className="navlink-text">
+                  register
+                </span>
+              </Nav.Link>
+              <Nav.Link
+                href="/login"
+                onClick={() => handleNavLinkClick('login')}
+                className={activeNavLink === 'login' ? 'active' : ''}
+              >
+                <span className="navlink-text">
+                  Login
                 </span>
               </Nav.Link>
               {userRoles.includes('admin') && (
