@@ -15,7 +15,7 @@ import ServiceCreationForm from './components/admin_items/add_services';
 import SelectedReservation from './components/selectedReservation';
 import ServiceDetails from './components/services/serviceDetails';
 import './css/custom.css';
-import Sidebar from './components/Sidebar';
+import Sidebartwo from './components/Sidebartwo';
 
 function Main() {
   return (
@@ -23,7 +23,7 @@ function Main() {
       <Router>
         <Container fluid className="app">
           <section className="sidebar-container">
-            <Sidebar />
+            <Sidebartwo />
           </section>
           <ToastContainer />
           <section className="main-container">
